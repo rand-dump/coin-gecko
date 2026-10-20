@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  color: #e8edf5;
+  background: #0e1117;
+  font-family: 'DM Sans', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: radial-gradient(circle at 78% 0%, #192638 0, #0e1117 35rem);
+}
+
+.page-shell {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 34px 32px 28px;
+}
+
+.hero {
+  position: relative;
+  min-height: 360px;
+  border-bottom: 1px solid #29313e;
+}
+
+.brand {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.brand-mark {
+  align-items: center;
+  background: #a9e86f;
+  border-radius: 9px;
+  color: #10160e;
+  display: flex;
+  font-size: 22px;
+  height: 30px;
+  justify-content: center;
+  width: 30px;
+}
+
+.live-status {
+  align-items: center;
+  color: #8f9cac;
+  display: flex;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  gap: 8px;
+  position: absolute;
+  right: 0;
+  top: 9px;
+}
+
+.status-dot {
+  background: #a9e86f;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #a9e86f1c;
+  height: 6px;
+  width: 6px;
+}
+
+.hero-copy {
+  left: 0;
+  position: absolute;
+  top: 142px;
+}
+
+.eyebrow {
+  color: #a9e86f;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  margin: 0 0 14px;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(40px, 6vw, 72px);
+  letter-spacing: -0.07em;
+  line-height: 0.98;
+  margin-bottom: 20px;
+  max-width: 720px;
+}
+
+h1 em {
+  color: #a9e86f;
+  font-style: normal;
+}
+
+.subtitle {
+  color: #9ba6b5;
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.market-card {
+  background: #151a22;
+  border: 1px solid #29313e;
+  border-radius: 14px;
+  margin-top: 38px;
+  overflow: hidden;
+}
+
+.card-heading {
+  align-items: end;
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 28px 24px;
+}
+
+.card-heading .eyebrow {
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 22px;
+  letter-spacing: -0.04em;
+  margin-bottom: 0;
+}
+
+.updated-label {
+  color: #697585;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  min-width: 760px;
+  width: 100%;
+}
+
+th {
+  background: #1b222c;
+  color: #697585;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  padding: 13px 28px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 28px;
+  width: 70px;
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 28px;
+}
+
+td {
+  border-top: 1px solid #252d38;
+  color: #c8d0db;
+  font-size: 13px;
+  padding: 17px 28px;
+  white-space: nowrap;
+}
+
+tbody tr {
+  transition: background 150ms ease;
+}
+
+tbody tr:hover {
+  background: #1b222c;
+}
+
+.rank {
+  color: #697585;
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+}
+
+.coin-name {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+
+.coin-name img {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.coin-name strong,
+.coin-name span {
+  display: block;
+}
+
+.coin-name strong {
+  color: #edf2f8;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.coin-name span,
+.price,
+.market-cap,
+.volume {
+  font-family: 'DM Mono', monospace;
+}
+
+.coin-name span {
+  color: #697585;
+  font-size: 10px;
+}
+
+.price {
+  color: #edf2f8;
+}
+
+.change {
+  border-radius: 4px;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  padding: 5px 7px;
+}
+
+.positive {
+  background: #a9e86f17;
+  color: #a9e86f;
+}
+
+.negative {
+  background: #ff7d7d17;
+  color: #ff8989;
+}
+
+.unknown {
+  background: #69758517;
+  color: #9ba6b5;
+}
+
+.market-cap,
+.volume {
+  color: #9ba6b5;
+}
+
+.message {
+  align-items: center;
+  color: #9ba6b5;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  min-height: 260px;
+}
+
+.error-message {
+  color: #ff8989;
+}
+
+.spinner {
+  animation: spin 0.8s linear infinite;
+  border: 2px solid #34404e;
+  border-radius: 50%;
+  border-top-color: #a9e86f;
+  height: 18px;
+  width: 18px;
+}
+
+footer {
+  color: #697585;
+  display: flex;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  justify-content: space-between;
+  padding: 18px 2px;
+  text-transform: uppercase;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    padding: 24px 16px;
+  }
+
+  .hero {
+    min-height: 390px;
+  }
+
+  .live-status {
+    top: 54px;
+  }
+
+  .hero-copy {
+    top: 145px;
+  }
+
+  .card-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    padding: 22px 18px;
+  }
+
+  th,
+  td {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  th:first-child,
+  td:first-child {
+    padding-left: 18px;
+  }
+
+  th:last-child,
+  td:last-child {
+    padding-right: 18px;
+  }
+
+  footer {
+    gap: 12px;
+    line-height: 1.6;
+  }
+}
